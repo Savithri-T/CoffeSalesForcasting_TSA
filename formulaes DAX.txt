@@ -1,0 +1,17 @@
+1.Cups Sold = COUNTROWS('Payment_Type')
+
+
+
+2.
+Total Revenue = SUMX(
+    CoffeSales,
+    CoffeSales[price]
+)
+
+
+
+3.
+Cups Sold MTD = CALCULATE(
+    COUNTROWS(CoffeeSales),
+    DATESMTD('Calendar'[Date])
+)
